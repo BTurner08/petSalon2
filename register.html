@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/petsalon.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header-r">
+        <div class="site-header-container-r">
+            <h1>The Fashion Pet</h1>
+            <nav>
+                <a href="petsalon.html">Home</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Register a new pet</h2>
+        <div>
+            <div>
+                <label>Name:</label>
+                <input type="text" id="txtName" class="pet-type">
+            </div>
+            <div>
+                <label>Age:</label>
+                <input type="text" id="txtAge" class="pet-type">
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="text" id="txtGender" class="pet-type">
+            </div>
+            <div>
+                <label>Service:</label>
+                <input type="text" id="txtService" class="pet-type">
+            </div>
+            <div>
+                <label>Type:</label>
+                <select name="" id="txtType" class="pet-type">
+                    <option value="" disabled selected>Select pet type</option>
+                <option value="Dog"> Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Squirrel">Squirrel</option>
+                <option value="Hampster">Hampster</option>
+                <option value="Raccoon">Raccoon</option>
+            </select>
+            </div>
+            <button onclick="register()">Register</button>
+        </div>
+    </main>
+
+
+    <script src="./scripts/register.js"></script>
+</body>
+</html>
