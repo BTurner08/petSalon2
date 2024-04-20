@@ -1,0 +1,21 @@
+/*form style*/
+
+.input-container{
+    
+    margin-bottom: 10px;
+}
+.input-container input, 
+.input-container select{
+    width: 80%;
+}
+.input-container label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+.fa-trash{
+    color: red;
+}
+.delete-btn{
+    border: none;
+}
