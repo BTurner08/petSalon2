@@ -33,7 +33,8 @@
                     <td>${pet.gender}</td>
                     <td>${pet.service}</td>
                     <td>${pet.type}</td>
-                    <td><button class="delete-btn" onclick="deletePet(${i});"><i class="fa-solid fa-trash"></i></button></td>
+                    <td> <a href="https://www.paypal.com/us/signin" target="Payment"><button class="payment-btn" ><i class="fa-solid fa-credit-card"></i></button></a> </td>
+                    <td> <button class="delete-btn" onclick="deletePet(${i});"><i class="fa-solid fa-trash"></i></button></td>
                 </tr>
             `;
         }
