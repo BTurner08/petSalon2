@@ -46,9 +46,9 @@ function register(){
     if(isValid(newPet)==true){
         petSalon.pets.push(newPet);
         displayRow();
+        showNotification("Successfully registered", "success");
         console.log(petSalon.pets);
     }
-    showNotification("Successfully registered", "success");
     totalCount()
     displayRow();
     displayServiceCount();

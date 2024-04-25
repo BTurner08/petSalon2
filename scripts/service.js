@@ -1,7 +1,7 @@
 let services=[];
 
 //constructor
-function Pet(name,price,type){
+function Service(name,price,type){
     //attributes=parameter;
     this.name=name
     this.price=price
@@ -31,14 +31,15 @@ function register(){
     let inputPrice = document.getElementById("txtPrice").value;
     let inputType = document.getElementById("txtType").value;
 
-    let newPet = new Pet(inputName,inputPrice,inputType);
-    console.log(newPet)
+    let newPet = new Service(inputName,inputPrice,inputType);
 
     if(isValid(newPet)==true){
         services.push(newPet);
         console.log(services);
+        save(newPet); // it is coming from storeManger
+        showNotification("A new Service has been added", "success");
+        $("input").val(""); //clears all the input
     }
-    showNotification("A new Service has been added", "success");
     clearForm();
 }
 function clearForm() {
@@ -47,14 +48,14 @@ function clearForm() {
     document.getElementById("txtType").value = "";
     }
 //use notification
-function showNotification(msg,style){
-    console.log("showNotification");
-    $("#notification").show();
-    $("#notificationText").text(msg);
-    $("#notification").addClass(style);
-    setTimeout( hideNotification, 3000);
-}
-function hideNotification(){
-    console.log("hideNotification");
-    $("#notification").hide();
-}
+// function showNotification(msg,style){
+//     console.log("showNotification");
+//     $("#notification").show();
+//     $("#notificationText").text(msg);
+//     $("#notification").addClass(style);
+//     setTimeout( hideNotification, 3000);
+// }
+// function hideNotification(){
+//     console.log("hideNotification");
+//     $("#notification").hide();
+// }
