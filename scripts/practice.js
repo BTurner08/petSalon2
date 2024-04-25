@@ -1,3 +1,35 @@
+// JS
+document.getElementById("sub1")
+
+
+document.getElementsByTagName("p")
+for(let i=0;i<p.length;i++) {
+    p[i].style.display = "none"
+}
+
+document.getElementsByClassName("bg-black")
+//jQuery
+//$("#sub1").hide(); //by id
+
+
+//$("p").hide(); // by tag
+
+
+//$(".bg-black").hide(); //by class
+
+// create a function that hides the last div
+// trigger the function when you click the button
+
+function hideTXT(){
+    $(".txt-hide").hide();
+}
+
+
+
+
+
+
+
 let petSalon = {
 
     name:"the fashion pet",
@@ -35,12 +67,10 @@ function isValid(pet){
 
 function register(){
     let inputName = document.getElementById("txtName").value;
-    let inputAge = document.getElementById("txtAge").value;
-    let inputGender = document.getElementById("txtGender").value;
-    let inputService = document.getElementById("txtService").value;
+    let inputPrice = document.getElementById("txtPrice").value;
     let inputType = document.getElementById("txtType").value;
 
-    let newPet = new Pet(inputName,inputAge,inputGender,inputService,inputType);
+    let newPet = new Pet(inputName,inputPrice,inputService,inputType);
     console.log(newPet)
 
     if(isValid(newPet)==true){
@@ -48,7 +78,6 @@ function register(){
         displayRow();
         console.log(petSalon.pets);
     }
-    showNotification("Successfully registered", "success");
     totalCount()
     displayRow();
     displayServiceCount();
@@ -60,7 +89,6 @@ function deletePet(id){
     console.log("Deleting pet..." + id)
     document.getElementById(id).remove();
     petSalon.pets.splice(id, 1)
-    showNotification("The pet has been deleted","error");
     displayRow();
     displayServiceCount();
 }
@@ -77,9 +105,7 @@ function init(){
 
 function clearForm() {
 document.getElementById("txtName").value = "";
-document.getElementById("txtAge").value = "";
-document.getElementById("txtGender").value = "";
-document.getElementById("txtService").value = "";
+document.getElementById("txtPrice").value = "";
 document.getElementById("txtType").value = "";
 }
 

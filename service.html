@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/display.css">
     <link rel="stylesheet" href="styles/register.css">
     <script src="https://kit.fontawesome.com/ddf79d53c5.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Service</title>
 </head>
 <body>
     <header class="site-header-r">
@@ -29,27 +29,20 @@
         <p id="notificationText">This is going to be dynamic text!</p>
     </div>
     <main class="container ">
-        <h2>Register a new pet</h2>
+        <h2>Register a new Service</h2>
         <div class=input-container>
             <div>
                 <label>Name:</label>
                 <input type="text" id="txtName" class="pet-type">
             </div>
             <div>
-                <label>Age:</label>
-                <input type="text" id="txtAge" class="pet-type">
-            </div>
-            <div>
-                <label>Gender:</label>
-                <input type="text" id="txtGender" class="pet-type">
-            </div>
-            <div>
-                <label>Service:</label>
-                <select name="" id="txtService"class="pet-type">
+                
+                <label>Price:</label>
+                <select name="" id="txtPrice"class="pet-type">
                     <option value="" disabled selected>Select a service</option>
-                    <option value="grooming">Grooming</option>
-                    <option value="vaccines">Vaccines</option>
-                    <option value="nails">Nails trimming</option>
+                    <option value="grooming">Grooming $100</option>
+                    <option value="vaccines">Vaccines $80</option>
+                    <option value="nails">Nails trimming $40</option>
                 </select>
             </div>
             <div>
@@ -61,52 +54,15 @@
                 <option value="Squirrel">Squirrel</option>
                 <option value="Hampster">Hampster</option>
                 <option value="Raccoon">Raccoon</option>
-            </select>
-            </div>
-        </div>
+                </select>
             <button onclick="register()" type="button" class="btn btn-secondary">Register</button>
         </div>
-
-        <div class="info-bar">
-            <h3>Pets information</h3>
-            <div>
-                <label for="totalPets">Total: <span id="totalCount"><h3>0</h3></span></label>
-            </div>
-            <div>
-            <label for="grooming">✂️: <span id="totalGroomings"> 0 </span></label>
-            <label for="grooming">💉: <span id="totalVaccines"> 0 </span></label>
-            <label for="grooming">💅: <span id="totalNails">0</span></label>
-            </div>
-
-        </div>
-
-        <div id="pets">
-
-        </div>
-        <div>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Gender</th>
-                    <th>Service</th>
-                    <th>Type</th>
-                    <th>Payment</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody id="petRows">
-
-            </tbody>
-        </table>
         </div>
     </main>
 
-
-    <script src="./scripts/register.js"></script>
-    <script src="./scripts/display.js"></script>
-    <script src="scripts/notification.js"></script>
     <script src="Plugins/jquery3.7.1.js"></script>
+    <script src="scripts/service.js"></script>
+    
+    <script src="scripts/notification.js"></script>
 </body>
 </html>
