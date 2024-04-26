@@ -20,7 +20,7 @@
 td, th {
     padding: 10px;
     text-align: left;
-    
+
 }
 tr {
     text-align: left;
@@ -34,6 +34,7 @@ tr {
 } */
 .container-table{
     text-align: left;
+    
 }
 .table-left{
     margin-right: auto;
@@ -49,6 +50,7 @@ input.pet-type {
     width: 700px;
     margin-bottom: 10px;
     height: 25px;
+    
 }
 select.pet-type {
     width: 700px; 

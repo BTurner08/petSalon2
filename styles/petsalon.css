@@ -20,11 +20,12 @@ a{
 
 .site-header{
     display: flex;
-    background-color: rgb(240, 142, 78);
-    height: 50vh;
+    background-color: rgb(233, 106, 21);
+    height: 70vh;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
-    background-image: url(../img/dog-banner-scaled.jpg);
+    
     background-position: center top 45%;
 }
 .main-body{
@@ -33,50 +34,69 @@ a{
     justify-content: space-around;
     flex-direction: column;
 }
-.body-img{
-    background-color: #dedede;
-    background-image: url(../img/grass.webp);
-    background-size: 80%;
-}
-.box{
-    display: flex;
-    background-color: rgb(211, 184, 98);
-    height: 40vh;
-    width: 80%;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px solid white;
-    background-image: url(../img/white-brick.jpg);
-}
+
 .flex{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-.btn{
-    background-color: #dedede;
-    width: 100%;
-    height: 40px;
-}
 .menu-nav a{
     text-decoration: none;
     color: black;
 }
-.results{
+
+.header-p{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: 1px solid black;
-    background-color: #dedede;
-    width: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }
-.results2{
+.site-header-container{
     display: flex;
+    background-color: rgb(129, 96, 46);
+}
+.header-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+.txt-header{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-between ;
+    color: rgb(99, 96, 96);
+    padding-left: 80px;
+    text-align: center;
+}
+.txt-header p{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+.main-body{
+    background-color: rgb(99, 96, 96);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+}
+.img-dog {
+    background-image: url(../img/dog-1532627_1280.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 60vh;
+    float: right;
+}
+.main-title {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    border: 2px solid black;
-    background-color: #dedede;
-    width: 70%;
-    overflow: auto;
+    flex-direction: column; 
+    margin-top: 0;
+    text-align: center;
+    width: 40%;
 }
