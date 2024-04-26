@@ -72,3 +72,9 @@ img {
     justify-content: center;
     padding: 100px;
 }
+.center-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}

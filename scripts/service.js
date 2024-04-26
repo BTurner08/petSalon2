@@ -21,7 +21,7 @@ function isValid(pet){
     }
     if(pet.type==""){
         validation=false;
-        alert("please add your animal type");
+        alert("please add your animal sevice");
     }
     return validation //returning the results
 }
@@ -30,8 +30,11 @@ function register(){
     let inputName = document.getElementById("txtName").value;
     let inputPrice = document.getElementById("txtPrice").value;
     let inputType = document.getElementById("txtType").value;
+    let inputLodging = document.getElementById("txtType").value;
+    let inputFlee = document.getElementById("txtType").value;
+    let inputDeclawing = document.getElementById("txtType").value;
 
-    let newPet = new Service(inputName,inputPrice,inputType);
+    let newPet = new Service(inputName,inputPrice,inputType,inputDeclawing,inputFlee,inputLodging);
 
     if(isValid(newPet)==true){
         services.push(newPet);
